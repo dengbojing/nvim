@@ -1,0 +1,12 @@
+local o = vim.opt
+o.nu = true
+o.rnu = true
+o.ignorecase = true
+o.cursorline = true
+o.encoding = 'utf-8'
+o.bk = false
+o.udf = false
+o.tabstop = 2
+o.shiftwidth = 2
+o.syntax = 'on'
+o.bg = 'dark'
