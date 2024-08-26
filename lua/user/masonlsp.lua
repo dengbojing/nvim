@@ -15,6 +15,7 @@ require("mason-lspconfig").setup({
 		"pyright",
 		"pylsp",
 		"lua_ls",
+		"marksman",
 		"rust_analyzer",
 		"vimls",
 		"yamlls",

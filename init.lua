@@ -38,6 +38,7 @@ require('lazy').setup({
 	 };
 	 {"mfussenegger/nvim-dap", enable=true}; -- debug adapter protocol
 	 {"rcarriga/nvim-dap-ui", dependencies = {"mfussenegger/nvim-dap","kyazdani42/nvim-web-devicons"} }; -- debug adapter protocol and an ui for this
+	 { "nvim-neotest/nvim-nio" };
 	 "nvim-tree/nvim-web-devicons";
    "folke/neodev.nvim"; -- use "nvim-lua/completion-nvim"
 	 "nvim-treesitter/nvim-treesitter"; -- program languge sytanx tree 
@@ -45,7 +46,7 @@ require('lazy').setup({
 	 "ellisonleao/glow.nvim"; -- for markdown preview
 
    "mfussenegger/nvim-jdtls";
-	 {"akinsho/bufferline.nvim", tag = "*", dependencies = "nvim-tree/nvim-web-devicons"};
+	 {"akinsho/bufferline.nvim", tags = "4.5.3", dependencies = "nvim-tree/nvim-web-devicons"};
 
 
 	 {
@@ -74,7 +75,7 @@ require('lazy').setup({
 		dependencies = { "nvim-tree/nvim-web-devicons"  }
 	 };
 	 {
-		  "nvim-telescope/telescope.nvim", tag = "0.1.1",
+		  "nvim-telescope/telescope.nvim", tag = "0.1.8",
 		  dependencies = {
 			{"nvim-lua/plenary.nvim"},
 			{
@@ -89,15 +90,8 @@ require('lazy').setup({
 		}
 	}; -- find file
 
-	{
-		"glepnir/dashboard-nvim",
-		event = "VimEnter",
-		config = function()
-			require("dashboard").setup({
-			})
-		end,
-		dependencies = {"nvim-tree/nvim-web-devicons"}
-	};
+
+
 })
 
 require('user.globals')
@@ -113,3 +107,7 @@ require('user.bufferline')
 require('user.treesitter')
 require('user.dapui')
 require('user.neodev')
+-- require('user.dashboard')
+
+
+
